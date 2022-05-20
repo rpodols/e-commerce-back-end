@@ -55,8 +55,8 @@ Starting from minimal starter code, this challenge required writing additional c
 * any questions, please feel free to reach out via email to rdpodols@gmail.com
 
 ## Link to Project & Screenshot
-![Employee Tracker Screenshot)](/assets/images/applicationImage1.png)
-[Click here to view the project!](https://rpodols.github.io/employee-tracker/)
+![E-commerece-back-end Screenshot)](/assets/images/applicationImage1.png)
+[Click here to view the project!](https://rpodols.github.io/e-commerce-back-end/)
 
 ## Walkthrough Video
 * video walkthrough to show full capabilities of app:
