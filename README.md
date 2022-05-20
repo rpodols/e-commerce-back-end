@@ -7,6 +7,7 @@ User Story: As a manager at an internet retail company, I want a back end for my
 
 Starting from minimal starter code, this challenge required writing additional code to do the following:
 *   GIVEN a functional Express.js API
+
         -WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
         -THEN I am able to connect to a database using Sequelize
 
