@@ -36,7 +36,7 @@ Starting from minimal starter code, this challenge required writing additional c
 * Node.js
 
 ## Installation
-* to install, clone the repository from GitHub, and run the command 'npm i' while in the project directory.  if sql database does not exist, additionally in the terminal - using the command 'mysql -u root -p', and then entering the mysql password, run source db/schema.sql.  if your mysql username is not root, please substitute your username in that command.  once the database exists, quit mysql, and run 'npm run seed' in the command line to seed the database.  once seeded, run 'npm start' in the command line to start the server.  insomnia can then be used to test the routes.
+* to install, clone the repository from GitHub, and run the command 'npm i' while in the project directory.  create an .env file in the root directory of this project, entering your mysql username, password, and db the data will reside in.  if sql database does not yet exist, additionally in the terminal enter the command 'mysql -u root -p', and then enter the mysql password, and run source db/schema.sql.  if your mysql username is not root, please substitute your username in that command.  once the database exists, quit mysql, and run 'npm run seed' in the command line to seed the database.  once seeded, run 'npm start' in the command line to start the server.  insomnia can then be used to test the routes.
 
 ## Usage
 * this can be used as an e-commerce back-end, for educational and learning purposes.
