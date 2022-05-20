@@ -1,4 +1,4 @@
-# E-cinnerce Back End - Challenge 13
+# E-commerce Back End - Challenge 13
 
 ## Description
 This project is the thirteenth challenge of the coding bootcamp.
@@ -35,10 +35,10 @@ Starting from minimal starter code, this challenge required writing additional c
 * Node.js
 
 ## Installation
-* to install, clone the repository from GitHub, run the command 'npm i' while in the project directory, and then run 'node app' to launch the employee tracker within the terminal/command line.  if database does not exist, additionally please run schema.sql, and seeds.sql to populate data into the database.  this can be done in the terminal - using the command 'mysql -u root -p', and then entering the mysql password.  if your mysql username is not root, please substitute your username in that command.  within mysql, run 'source db/schema.sql' to run the schema, and to seed, run 'source db/seeds.sql'.  running 'node app' in terminal after should result in a populated database.
+* to install, clone the repository from GitHub, and run the command 'npm i' while in the project directory.  if sql database does not exist, additionally in the terminal - using the command 'mysql -u root -p', and then entering the mysql password, run source db/schema.sql.  if your mysql username is not root, please substitute your username in that command.  once the database exists, quit mysql, and run 'npm run seed' in the command line to seed the database.  once seeded, run 'npm start' in the command line to start the server.  insomnia can then be used to test the routes.
 
 ## Usage
-* this can be used to manage a company's employee database
+* this can be used as an e-commerce back-end, for educational and learning purposes.
 
 ## Contributing
 * no outside contributions at this time
@@ -49,7 +49,7 @@ Starting from minimal starter code, this challenge required writing additional c
 [Click here for more license info!](https://choosealicense.com/licenses/mit/)
 
 ## Tests
-* tests can be run by creating departments, roles, employees, and then viewing any entered data and updating if necessary.  a 'seeds.sql' will be included in the repository, which can be run populate the database with test data.
+* tests can be run by using Insomnia, and testing different get, post, put, and delete commands once the server is running.
 
 ## Questions
 * any questions, please feel free to reach out via email to rdpodols@gmail.com
