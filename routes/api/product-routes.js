@@ -72,12 +72,15 @@ router.post('/', (req, res) => {
             tag_id,
           };
         });
-        return ProductTag.bulkCreate(productTagIdArr);
+        // return ProductTag.bulkCreate(productTagIdArr);
+        ProductTag.bulkCreate(productTagIdArr);
       }
+      
+      return product;
       // if no product tags, just respond
-      res.status(200).json(product);
+      // res.status(200).json(product);
     })
-    .then((productTagIds) => res.status(200).json(productTagIds))
+    .then((product) => res.status(200).json(product))
     .catch((err) => {
       console.log(err);
       res.status(400).json(err);
@@ -126,24 +129,23 @@ router.put('/:id', (req, res) => {
     });
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', (req, res) => {
   // delete one product by its `id` value
-  try {
-    const productData = await Product.destory({
-      where: {
-        id: req.params.id
-      }
-    });
-
-    if (!productData) {
+  Product.destroy({
+    where: {
+      id: req.params.id,
+    }
+  })
+  .then((product) => {
+    if (!product) {
       res.status(404).json({ message: 'No product found with that ID!'});
       return;
     }
-
-    res.status(200).json(productData);
-  } catch (err) {
-    res.status(500).json(err);
-  }
+    res.json("Product deleted!");
+  })
+  .catch((err) => {
+    res.status(400).json(err);
+  });
 });
 
 module.exports = router;

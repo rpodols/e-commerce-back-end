@@ -61,4 +61,4 @@ Starting from minimal starter code, this challenge required writing additional c
 
 ## Walkthrough Video
 * video walkthrough to show full capabilities of app:
-    - Click here: https://drive.google.com/file/d/1gUJV8sb8AmwvVB58IEnCluxtTwOpJsbs/view
+    - Click here: https://drive.google.com/file/d/1JXs1ZBtAvwgXrNvm0vPTPg7YuOgYaIzt/view
